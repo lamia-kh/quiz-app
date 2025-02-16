@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz-page</title>
+    <link rel="stylesheet" href="quiz-page.css">
+    <script src="quizscript.js" type="module"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="head">
+         <div class="param-button">
+        <img src="images/téléchargement__19_-removebg-preview (2).png" alt="gear icon" class="param">
+      </div>
+    <img src="gif/black and white bird STICKER - Find & Share on GIPHY.gif" class="birds">
+    </div>
+    <!-- quiz container-->
+     
+    <div class="middle-container"> 
+        <!-- left choices-->
+
+        <div class="choice-container-left">
+            <div class="container">
+                <img src="images/answer.png" alt="wooden sign" class="img">
+                <label class="option-label"><input id="answer" type="radio" name="answer" value="index" > bool</label>
+              </div>
+
+              <div class="container">
+                <img src="images/answer.png" alt="wooden sign" class="img">
+                <label class ="option-label"><input id="answer" type="radio" name="answer" value="index" > str</label>
+              </div>
+        </div>   
+    
+        
+    <!--question container-->
+    <div class="board-container" id="question-container">
+        <img src="image copy.png" alt="wooden sign" class="board">
+        <p class="question-text" id="question">What data type is used to store text in Python?</p>
+      </div>
+            <!-- right choices -->
+
+     <div class="choice-container-right">
+
+        <div class="container">
+            <img src="images/answer.png" alt="wooden sign" class="img" >
+            <label  class ="option-label" ><input id="answer" type="radio" name="answer" value="index" > int</label>
+          </div>
+
+          <div class="container">
+            <img src="images/answer.png" alt="wooden sign" class="img">
+            <label  class="option-label"><input id="answer" type="radio" name="anwer" value="index" > float</label>
+
+          </div>
+    </div>
+     
+        
+     
+    </div>
+
+    <div class="nav-buttons">
+        <div>
+            <button class="btn back-btn" id="backButton" >Back</button>
+        </div>
+        <button class="btn next-btn" id="nextButton" >Next</button>
+    </div>
+    <script>
+      </script>
+</body>
+<script>
+    const clickSound = new Audio("button-202966.mp3");
+
+  document.querySelectorAll(".option-label,.btn").forEach(button => {
+  button.addEventListener("click", () => {
+    clickSound.currentTime = 0;
+    clickSound.play();
+  });
+});
+  </script>
+</html>

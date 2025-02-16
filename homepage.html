@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz app</title>
+    <link rel="stylesheet" href="home-style.css">
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class ="container">
+  <!--<h1 class="title"><span class="ptitle">P</span>rogramming <span class="ptitle">Q</span>uiz</h1>-->
+  <div class="img-container">
+      <img src="images/image.png">
+  </div>
+  <div class="btn-container">
+    <button class="btn start-btn" id="button">START</button>
+    <button class="btn exit-btn">EXIT</button>
+  </div>
+  <div class="ham-container">
+    <img src="images/hamtaro.png" alt="Hamster" class="hamster">
+    <img src="images/wood.png" alt="Wooden Sign" class="wooden-sign">
+    <img src="images/dev.png" alt="Development Sign" class="dev-sign">
+
+    <!--<div class="code-icon">&lt;/&gt;</div>*/-->
+  </div>
+   
+  </div>
+</body>
+<script>
+
+  const clickSound = new Audio("button-202966.mp3");
+
+  document.querySelectorAll(".btn").forEach(button => {
+  button.addEventListener("click", () => {
+    clickSound.play();
+  });
+  document.getElementById("button").onclick = function () {
+    window.location.href = "http://127.0.0.1:5501/quizpage.html";
+  };
+  const test = () => console.log("ES6 is working!");
+   test();
+  
+});
+  
+
+</script>
+
+</html>
+

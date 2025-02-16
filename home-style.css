@@ -1,0 +1,141 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Pixelify Sans';
+}
+body {
+    margin-top: 50px;
+    background-image: url('images/mario.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+.img-container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;  
+}
+img{
+width: 720px;
+}
+
+h1 {
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 4rem;
+    color:   #FF9721    ;
+    text-align: center;
+    margin-top: 60px;
+    text-shadow: 
+        -4px -4px 0 #0c0904, /* Top-left */
+         4px -4px 0 #0e0c0a,  /* Top-right */
+        -4px  4px 0  #090805,/* Bottom-left */
+         4px  4px 0  #020101,  /* Bottom-right */
+        -4px  0px 0  #0c0a06,  /* Left */
+         4px  0px 0  #120d07,  /* Right */
+         0px -4px 0  #0a0805, /* Top */
+         0px  4px 0  #030302;  /* Bottom */
+}
+
+
+.ptitle {
+    font-family: 'Rubik Distressed';
+    font-size: 6rem;
+}
+.btn-container{
+    position: absolute; /* or fixed if you want it to stay in place */
+    top: 20%; /* Adjust vertical position */
+    right: 300px; /* Moves the buttons to the left */
+    top: 270px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+button {
+    width: 200px;
+    padding: 15px;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 30px;
+    border : none;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px black;
+    transition: 0.3s ease;
+
+}
+
+/* Start Button */
+.start-btn {
+    color: yellow;
+    top: 65%;
+    background: #33AE0D;
+border-top: 6px solid #4BAE2D;
+box-shadow: inset 0px 4px 30px 2px #144604;
+border-radius: 55px;
+}
+
+
+/* Exit Button */
+.exit-btn {
+    background: #FF9721;
+border-top: 6px solid #D7882E;
+box-shadow: inset 0px 4px 30px 2px #382611;
+border-radius: 55px;
+    color: yellow;
+    top: 65%;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.ham-container {
+    position: relative;
+    width: 300px; /* Adjust as needed */
+    height: 300px; /* Adjust as needed */
+    left: 200px;
+    top: 200px;
+}
+
+.hamster {
+    position: absolute;
+    width: 600px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; /* Lowest layer */
+}
+
+.wooden-sign {
+    position: absolute;
+    width: 350px;
+    bottom: 50px; /* Adjust to overlap the hamster */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2; /* Middle layer */
+}
+.code-icon {
+    font-size: 3rem;  /* Adjust text size */
+    font-weight: bold; /* Make it bold */
+    position: absolute;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    z-index: 3;
+    left: 40%;
+    bottom:100px;
+}
+.dev-sign {
+    width : 200px;
+    position: absolute;
+    bottom: 60px; /* Adjust to be on top of the wooden sign */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3; /* Top layer */
+}
